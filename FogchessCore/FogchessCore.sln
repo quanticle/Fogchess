@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FogchessCore", "FogchessCor
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FogchessClient", "..\FogchessClient\FogchessClient.csproj", "{A16A10E0-2118-4ACA-937D-095732F5F381}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FogchessCoreTests", "..\FogchessCoreTests\FogchessCoreTests.csproj", "{A955EA25-61D2-461B-A99D-0482243DB8A1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{A16A10E0-2118-4ACA-937D-095732F5F381}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A16A10E0-2118-4ACA-937D-095732F5F381}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A16A10E0-2118-4ACA-937D-095732F5F381}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A955EA25-61D2-461B-A99D-0482243DB8A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A955EA25-61D2-461B-A99D-0482243DB8A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A955EA25-61D2-461B-A99D-0482243DB8A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A955EA25-61D2-461B-A99D-0482243DB8A1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

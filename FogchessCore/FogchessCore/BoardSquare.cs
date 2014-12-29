@@ -6,6 +6,11 @@ using System.Threading.Tasks;
 
 namespace FogchessCore
 {
+    public enum SquareColor
+    {
+        Black,
+        White
+    }
     public class BoardSquare
     {
         public ChessPiece Piece
@@ -28,11 +33,44 @@ namespace FogchessCore
             }
         }
 
-        private ChessBoard _board;
+        protected int _rank;
 
-        public BoardSquare(ChessBoard board)
+        public int Rank
+        {
+            get
+            {
+                return _rank;
+            }
+        }
+
+        protected int _file;
+
+        public int File
+        {
+            get
+            {
+                return _file;
+            }
+        }
+
+        protected SquareColor _color;
+
+        public SquareColor Color
+        {
+            get
+            {
+                return _color;
+            }
+        }
+
+        protected ChessBoard _board;
+
+        public BoardSquare(ChessBoard board, int rank, int file, SquareColor color)
         {
             this._board = board;
+            this._rank = rank;
+            this._file = file;
+            this._color = color;
         }
     }
 }
