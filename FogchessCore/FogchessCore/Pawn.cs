@@ -19,12 +19,12 @@ namespace FogchessCore
         /// </summary>
         public override void RevealVisibleSquares()
         {
-            
+            int currentRank = this.Square.Rank;
+            int currentFile = this.Square.File;
+            ChessBoard board = this.Square.Board;
             if (this._color == PieceColor.White)
             {
-                int currentRank = this.Square.Rank;
-                int currentFile = this.Square.File;
-                ChessBoard board = this.Square.Board;
+
                 if (currentRank < 7)
                 {
                     if (currentFile == 0)
@@ -42,6 +42,28 @@ namespace FogchessCore
                         board.Grid[currentRank + 1][currentFile - 1].Visible = true;
                         board.Grid[currentRank + 1][currentFile].Visible = true;
                         board.Grid[currentRank + 1][currentFile + 1].Visible = true;
+                    }
+                }
+            }
+            else
+            {
+                if (currentRank > 0)
+                {
+                    if (currentFile == 0)
+                    {
+                        board.Grid[currentRank - 1][currentFile].Visible = true;
+                        board.Grid[currentRank - 1][currentFile + 1].Visible = true;
+                    }
+                    else if (currentFile == 7)
+                    {
+                        board.Grid[currentRank - 1][currentFile].Visible = true;
+                        board.Grid[currentRank - 1][currentFile - 1].Visible = true;
+                    }
+                    else
+                    {
+                        board.Grid[currentRank - 1][currentFile - 1].Visible = true;
+                        board.Grid[currentRank - 1][currentFile].Visible = true;
+                        board.Grid[currentRank - 1][currentFile + 1].Visible = true;
                     }
                 }
             }
