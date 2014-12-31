@@ -1,0 +1,6 @@
+* What is Fogchess
+
+Fogchess, like it sounds, is chess with fog of war. In practice, what this means
+is that you can see only the squares that you can move to. 
+
+
