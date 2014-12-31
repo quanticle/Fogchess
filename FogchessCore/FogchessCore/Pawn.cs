@@ -22,6 +22,7 @@ namespace FogchessCore
             int currentRank = this.Square.Rank;
             int currentFile = this.Square.File;
             ChessBoard board = this.Square.Board;
+            board.Grid[currentRank][currentFile].Visible = true;
             if (this._color == PieceColor.White)
             {
 

@@ -141,5 +141,17 @@ namespace FogchessCoreTests
             Assert.AreEqual(true, board.Grid[3][4].Visible);
             
         }
+
+        [TestMethod]
+        public void TestPawnOwnSquareVisibility()
+        {
+            ChessBoard board = new ChessBoard();
+            board.Grid[4][3].Piece = new Pawn(PieceColor.White)
+            {
+                Square = board.Grid[4][3]
+            };
+            board.Grid[4][3].Piece.RevealVisibleSquares();
+            Assert.AreEqual(true, board.Grid[4][3].Visible);
+        }
     }
 }
